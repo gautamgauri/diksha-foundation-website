@@ -11,6 +11,10 @@
   max-width: 680px;
 }
 
+.home-page .home-hero .hero-visual img {
+  object-position: 50% 68%;
+}
+
 .home-proof {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -192,8 +196,8 @@
   grid-row: span 2;
   min-height: 640px;
   background:
-    radial-gradient(circle at 88% 8%, rgba(103, 176, 123, 0.42), transparent 28%),
-    var(--brown);
+    linear-gradient(180deg, rgba(67, 34, 22, 0.7), rgba(67, 34, 22, 0.9)),
+    url("assets/images/outdoor-learning-session-2023.webp") center / cover;
   color: rgba(255, 255, 255, 0.78);
 }
 
