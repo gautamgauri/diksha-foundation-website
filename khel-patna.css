@@ -290,6 +290,23 @@
   font-size: clamp(1.22rem, 2vw, 1.55rem);
 }
 
+.khel-school-note {
+  align-self: center;
+  padding: 42px;
+  border-top: 1px solid rgba(47, 107, 67, 0.25);
+  border-bottom: 1px solid rgba(47, 107, 67, 0.25);
+}
+
+.khel-school-note h3 {
+  margin-bottom: 16px;
+  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+}
+
+.khel-school-note > p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .khel-history {
   background: var(--brown-deep);
   color: rgba(255, 255, 255, 0.7);
