@@ -293,10 +293,16 @@
   margin-bottom: 0;
 }
 
-.work-centres article > p {
+.work-centres article > p,
+.work-centre-copy > p {
   margin: 4px 38px 0 0;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.work-centre-copy .text-link {
+  margin-top: 18px;
+  font-size: 0.82rem;
 }
 
 .work-centres article > span {
