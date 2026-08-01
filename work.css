@@ -376,10 +376,16 @@
   color: var(--muted);
 }
 
+.work-programme-summary {
+  max-width: 620px;
+  color: var(--muted);
+}
+
 .work-programme-featured .work-card-number,
 .work-programme-featured .card-kicker,
 .work-programme-featured h3,
-.work-programme-featured p:last-child {
+.work-programme-featured p:last-child,
+.work-programme-featured .work-programme-summary {
   color: var(--white);
 }
 
@@ -394,6 +400,12 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.work-programme-featured .work-programme-link {
+  margin-top: 24px;
+  color: var(--white);
+  font-size: 0.86rem;
 }
 
 .work-programme-image {
