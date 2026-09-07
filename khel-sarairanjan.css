@@ -1,0 +1,187 @@
+.khel-sarairanjan-page {
+  background: var(--ivory);
+}
+
+.khel-sarairanjan-page .khel-hero {
+  background:
+    radial-gradient(
+      circle at 10% 90%,
+      rgba(226, 144, 72, 0.2),
+      transparent 28%
+    ),
+    #fff8ef;
+}
+
+.khel-sarairanjan-page .khel-hero-photo img {
+  object-position: center 48%;
+}
+
+.khel-sarairanjan-theatre-photo img {
+  object-position: center;
+}
+
+.khel-sarairanjan-learning {
+  background: var(--white);
+}
+
+.khel-sarairanjan-learning-grid {
+  display: grid;
+  align-items: center;
+  gap: 86px;
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 0.78fr);
+}
+
+.khel-sarairanjan-learning-grid > div {
+  max-width: 720px;
+}
+
+.khel-sarairanjan-learning-grid > div > p:last-child {
+  color: var(--muted);
+}
+
+.khel-sarairanjan-learning-lead,
+.khel-sarairanjan-nutrition-lead {
+  color: var(--brown-dark);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  line-height: 1.5;
+}
+
+.khel-sarairanjan-result {
+  padding: 46px;
+  border-radius: var(--radius-lg);
+  background: var(--green-soft);
+  box-shadow: var(--shadow);
+}
+
+.khel-sarairanjan-result > div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 28px 0 22px;
+}
+
+.khel-sarairanjan-result span {
+  color: var(--green-dark);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2.4rem, 5vw, 4.3rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.khel-sarairanjan-result strong {
+  color: var(--terracotta);
+  font-size: 1.6rem;
+}
+
+.khel-sarairanjan-result > p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.khel-school-note {
+  align-self: center;
+  padding: 42px;
+  border-top: 1px solid rgba(47, 107, 67, 0.25);
+  border-bottom: 1px solid rgba(47, 107, 67, 0.25);
+}
+
+.khel-school-note h3 {
+  margin-bottom: 16px;
+  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+}
+
+.khel-school-note > p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.khel-sarairanjan-sport figure img {
+  height: 560px;
+  object-position: center;
+}
+
+.khel-sarairanjan-nutrition {
+  background: var(--white);
+}
+
+.khel-sarairanjan-nutrition-grid {
+  display: grid;
+  align-items: center;
+  gap: 86px;
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+}
+
+.khel-sarairanjan-nutrition-grid > div {
+  max-width: 660px;
+}
+
+.khel-sarairanjan-nutrition-grid > div > p:last-child {
+  color: var(--muted);
+}
+
+.khel-sarairanjan-nutrition figure {
+  margin: 0;
+}
+
+.khel-sarairanjan-nutrition figure img {
+  width: 100%;
+  height: 610px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  object-position: center 48%;
+}
+
+.khel-sarairanjan-nutrition figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 980px) {
+  .khel-sarairanjan-learning-grid,
+  .khel-sarairanjan-nutrition-grid {
+    gap: 54px;
+  }
+}
+
+@media (max-width: 820px) {
+  .khel-sarairanjan-learning-grid,
+  .khel-sarairanjan-nutrition-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .khel-sarairanjan-result {
+    max-width: 620px;
+  }
+
+  .khel-sarairanjan-nutrition figure {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 680px) {
+  .khel-sarairanjan-learning-grid,
+  .khel-sarairanjan-nutrition-grid {
+    gap: 38px;
+  }
+
+  .khel-sarairanjan-result {
+    padding: 32px 24px;
+  }
+
+  .khel-sarairanjan-result > div {
+    gap: 12px;
+  }
+
+  .khel-school-note {
+    padding: 30px 0;
+  }
+
+  .khel-sarairanjan-sport figure img,
+  .khel-sarairanjan-nutrition figure img {
+    height: 430px;
+  }
+}
