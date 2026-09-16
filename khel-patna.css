@@ -1,0 +1,603 @@
+.khel-patna-page {
+  background: var(--ivory);
+}
+
+.khel-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 58px 0 108px;
+  background:
+    radial-gradient(circle at 11% 92%, rgba(103, 176, 123, 0.18), transparent 25%),
+    #fffaf4;
+}
+
+.khel-hero::after {
+  position: absolute;
+  top: 15%;
+  right: -190px;
+  width: 440px;
+  height: 440px;
+  border: 1px solid rgba(151, 81, 42, 0.16);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.khel-hero .breadcrumb {
+  margin-bottom: 52px;
+}
+
+.khel-hero-grid {
+  display: grid;
+  align-items: center;
+  gap: 88px;
+  grid-template-columns: minmax(0, 1fr) minmax(410px, 0.72fr);
+}
+
+.khel-hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.khel-hero-copy h1 {
+  max-width: 760px;
+  font-size: clamp(4.6rem, 8.5vw, 8.3rem);
+}
+
+.khel-hero-lead {
+  max-width: 690px;
+  color: var(--brown-dark);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.48;
+}
+
+.khel-hero-copy > p:not(.eyebrow, .khel-hero-lead) {
+  max-width: 650px;
+  color: var(--muted);
+}
+
+.khel-hero-copy .text-link {
+  margin-top: 18px;
+}
+
+.khel-hero-photo {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.khel-hero-photo::before {
+  position: absolute;
+  z-index: -1;
+  top: -22px;
+  right: -20px;
+  width: 78%;
+  height: 62%;
+  border-radius: 28px;
+  background: var(--green);
+  content: "";
+  transform: rotate(3deg);
+}
+
+.khel-hero-photo img {
+  width: 100%;
+  height: 620px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+.khel-hero-photo figcaption {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  display: grid;
+  gap: 3px;
+  padding: 17px 19px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 16px;
+  background: rgba(251, 247, 242, 0.92);
+  backdrop-filter: blur(12px);
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.khel-hero-photo figcaption span {
+  color: var(--brown);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.khel-hero-photo figcaption strong {
+  color: var(--brown-deep);
+  font-size: 0.92rem;
+}
+
+.khel-facts {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--white);
+}
+
+.khel-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.khel-facts-grid > div {
+  display: grid;
+  min-height: 142px;
+  align-content: center;
+  gap: 3px;
+  padding: 24px 30px;
+  border-right: 1px solid var(--line);
+}
+
+.khel-facts-grid > div:first-child {
+  padding-left: 0;
+}
+
+.khel-facts-grid > div:last-child {
+  border-right: 0;
+}
+
+.khel-facts-grid strong {
+  color: var(--brown-dark);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.khel-facts-grid span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.khel-facts-note {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-top: 1px solid var(--line);
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-align: right;
+}
+
+.khel-section-heading {
+  display: grid;
+  align-items: end;
+  gap: 80px;
+  margin-bottom: 62px;
+  grid-template-columns: 1fr 0.72fr;
+}
+
+.khel-section-heading h2 {
+  margin-bottom: 0;
+}
+
+.khel-section-heading > p {
+  max-width: 520px;
+  margin-bottom: 18px;
+  color: var(--muted);
+}
+
+.khel-activity {
+  background: var(--ivory);
+}
+
+.khel-activity-layout {
+  display: grid;
+  align-items: start;
+  gap: 72px;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.65fr);
+}
+
+.khel-activity-list {
+  border-top: 1px solid var(--line);
+}
+
+.khel-activity-list article {
+  display: grid;
+  gap: 28px;
+  padding: 29px 0;
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: 32px 1fr;
+}
+
+.khel-activity-list article > span {
+  color: var(--green-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.khel-activity-list h3 {
+  margin-bottom: 10px;
+  font-size: clamp(1.35rem, 2vw, 1.78rem);
+}
+
+.khel-activity-list p {
+  max-width: 660px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.khel-football-photo {
+  position: sticky;
+  top: 118px;
+  margin: 0;
+}
+
+.khel-football-photo img {
+  width: 100%;
+  height: 690px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.khel-football-photo figcaption,
+.khel-families figcaption,
+.khel-alumni figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.khel-schools {
+  background: var(--green-soft);
+}
+
+.khel-schools-grid {
+  display: grid;
+  gap: 96px;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+}
+
+.khel-schools-grid > div > p:last-child {
+  max-width: 570px;
+  color: var(--muted);
+}
+
+.khel-school-list {
+  padding: 0;
+  border-top: 1px solid rgba(47, 107, 67, 0.25);
+  margin: 0;
+  list-style: none;
+}
+
+.khel-school-list li {
+  display: grid;
+  min-height: 102px;
+  align-items: center;
+  gap: 22px;
+  border-bottom: 1px solid rgba(47, 107, 67, 0.25);
+  grid-template-columns: 42px 1fr;
+}
+
+.khel-school-list span {
+  color: var(--green-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.khel-school-list strong {
+  color: var(--brown-deep);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.22rem, 2vw, 1.55rem);
+}
+
+.khel-school-note {
+  align-self: center;
+  padding: 42px;
+  border-top: 1px solid rgba(47, 107, 67, 0.25);
+  border-bottom: 1px solid rgba(47, 107, 67, 0.25);
+}
+
+.khel-school-note h3 {
+  margin-bottom: 16px;
+  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+}
+
+.khel-school-note > p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.khel-history {
+  background: var(--brown-deep);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.khel-history .section-index,
+.khel-history h2,
+.khel-history h3 {
+  color: var(--white);
+}
+
+.khel-history .khel-section-heading > p {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.khel-timeline {
+  display: grid;
+  gap: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.15);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.khel-timeline article {
+  min-height: 360px;
+  padding: 32px;
+  background: var(--brown-deep);
+}
+
+.khel-timeline article > p:first-child {
+  margin-bottom: 70px;
+  color: var(--green);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.khel-timeline h3 {
+  margin-bottom: 18px;
+}
+
+.khel-timeline article > p:last-child {
+  margin-bottom: 0;
+  font-size: 0.91rem;
+}
+
+.khel-history-note {
+  max-width: 790px;
+  padding: 28px 0 0 28px;
+  border-left: 4px solid var(--green);
+  margin: 48px 0 0;
+  color: var(--white);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.khel-alumni {
+  background: #f2e9df;
+}
+
+.khel-alumni-grid {
+  display: grid;
+  align-items: center;
+  gap: 94px;
+  grid-template-columns: minmax(360px, 0.75fr) minmax(0, 1fr);
+}
+
+.khel-alumni figure {
+  margin: 0;
+}
+
+.khel-alumni figure img {
+  width: 100%;
+  height: 630px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  object-position: center 28%;
+}
+
+.khel-alumni-grid > div {
+  max-width: 650px;
+}
+
+.khel-alumni-grid > div > p:not(.section-index, .khel-alumni-lead) {
+  color: var(--muted);
+}
+
+.khel-alumni-lead {
+  color: var(--brown-dark);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  line-height: 1.48;
+}
+
+.khel-families {
+  background: var(--white);
+}
+
+.khel-families-grid {
+  display: grid;
+  align-items: center;
+  gap: 80px;
+  grid-template-columns: minmax(0, 0.7fr) minmax(460px, 1.3fr);
+}
+
+.khel-families-grid > div > p:last-child {
+  max-width: 530px;
+  color: var(--muted);
+}
+
+.khel-families figure {
+  margin: 0;
+}
+
+.khel-families figure img {
+  width: 100%;
+  height: 510px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+.khel-support .eyebrow {
+  color: var(--white);
+}
+
+@media (max-width: 980px) {
+  .khel-hero-grid {
+    gap: 58px;
+    grid-template-columns: minmax(0, 1fr) minmax(350px, 0.72fr);
+  }
+
+  .khel-hero-photo img {
+    height: 570px;
+  }
+
+  .khel-activity-layout {
+    gap: 44px;
+    grid-template-columns: minmax(0, 1fr) minmax(310px, 0.6fr);
+  }
+
+  .khel-schools-grid,
+  .khel-alumni-grid {
+    gap: 54px;
+  }
+}
+
+@media (max-width: 820px) {
+  .khel-hero-grid,
+  .khel-section-heading,
+  .khel-activity-layout,
+  .khel-schools-grid,
+  .khel-alumni-grid,
+  .khel-families-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .khel-hero-grid {
+    gap: 64px;
+  }
+
+  .khel-hero-photo {
+    max-width: 610px;
+  }
+
+  .khel-hero-photo img {
+    height: 680px;
+  }
+
+  .khel-facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .khel-facts-grid > div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .khel-facts-grid > div:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .khel-facts-grid > div:first-child {
+    padding-left: 30px;
+  }
+
+  .khel-section-heading {
+    gap: 24px;
+  }
+
+  .khel-section-heading > p {
+    margin-bottom: 0;
+  }
+
+  .khel-football-photo {
+    position: static;
+  }
+
+  .khel-football-photo img {
+    height: 720px;
+  }
+
+  .khel-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .khel-timeline article {
+    min-height: 280px;
+  }
+
+  .khel-timeline article > p:first-child {
+    margin-bottom: 42px;
+  }
+
+  .khel-alumni figure {
+    max-width: 610px;
+  }
+
+  .khel-families-grid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  .khel-hero {
+    padding: 42px 0 76px;
+  }
+
+  .khel-hero .breadcrumb {
+    margin-bottom: 42px;
+  }
+
+  .khel-hero-copy h1 {
+    font-size: clamp(4rem, 21vw, 6rem);
+  }
+
+  .khel-hero-photo img {
+    height: 530px;
+  }
+
+  .khel-hero-photo::before {
+    top: -12px;
+    right: -8px;
+  }
+
+  .khel-hero-photo figcaption {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+  }
+
+  .khel-facts-grid > div,
+  .khel-facts-grid > div:first-child {
+    min-height: 116px;
+    padding: 18px 20px;
+  }
+
+  .khel-facts-note {
+    text-align: left;
+  }
+
+  .khel-activity-list article {
+    gap: 14px;
+    grid-template-columns: 28px 1fr;
+  }
+
+  .khel-football-photo img {
+    height: 560px;
+  }
+
+  .khel-school-list li {
+    min-height: 88px;
+  }
+
+  .khel-timeline article {
+    min-height: 260px;
+    padding: 26px 24px;
+  }
+
+  .khel-history-note {
+    padding-left: 20px;
+    font-size: 1.12rem;
+  }
+
+  .khel-alumni figure img {
+    height: 530px;
+  }
+
+  .khel-families figure img {
+    height: 390px;
+  }
+}
